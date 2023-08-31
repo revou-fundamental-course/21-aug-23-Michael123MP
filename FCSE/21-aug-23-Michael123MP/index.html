@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Project Portofolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Website Revou</title>
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Tes H1</h1>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <div class="logo">
+                    <img src="image/revou.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="nav-button">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        
+        <div class="nav-links">
+            <a href="#" target="_blank">Home</a>
+            <a href="#" target="_blank">Our Profile</a>
+            <a href="#" target="_blank">Achievements</a>
+            <a href="#" target="_blank">Message Us</a>
+        </div>
+    </div>
+    
+    <section class="content">
+        <h1 id="name"></h1>
+        <p>Latihan website berisi game</p>
+        <section class="banner">
+            <!--Slideshow Content-->
+            <div class="slideshow-contents">
+                <!-- Foto Slideshow dengan animasi dan nomor -->
+                <div class="slide fade">
+                    <div class="number">1/3</div>
+                    <img src="image/pubg.png" style="width:100%">
+                    <div class="text">PUBG Mobile</div>
+                </div>
+            
+                <div class="slide fade">
+                    <div class="number">2/3</div>
+                    <img src="image/epep.png" style="width:100%">
+                    <div class="text">Free Fire</div>
+                </div>
+                
+                
+                <div class="slide fade">
+                    <div class="number">3/3</div>
+                    <img src="image/codm.png" style="width:100%">
+                    <div class="text">Call of Duty Mobile</div>
+                </div>
+                
+                <!-- button left and right -->
+                <a class="left" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="right" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- circles-->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+                </section>
+        
+                <section class="facilitation">
+                    <h1>Games Facilities</h1>
+                    <p class="text-fac">Berikut adalah fasilitas yang anda dapatkan ketika bermain game tersebut</p> <div class="flex-item">
+                    <div class="item-fac">
+                        <img class="img-fac" src="image/sanhok.png" alt="">
+                        <p>Banyak Pilihan Map</p>
+                    </div>
+                    <div class="item-fac">
+                    <img class="img-fac" src="image/senjata.png" alt="">
+                        <p>Senjata yang banyak</p>
+                    </div>
+                        <div class="item-fac">
+                            <img class="img-fac" src="image/char.png" alt="">
+                        <p>Koleksi Karakter</p>
+                    </div>
+                    </div>
+            </section>
+            </section>
+            
+            <section class="message">
+            <h2>Message Us</h2>
+            <div class="iten-pesan">
+                <form class="form">
+                    <div class="item-form">
+                        <label for="nama">Nama</label>
+                        <input type="text" placeholder="Nana" id="nana" name="nama">
+                    </div>
+    <div class="item-form">
+    <label form="ttl">Tanggal Lahir</label>
+    <input type="date" id="ttl" name="t1">
+    </div>
+    <div class="item-form">
+    <label form="gender">Jenis Kelamin</label>
+    <input type="radio" name="jenis kelamin" value="Laki-laki"> Laki-laki<br> <input type="radio" name="jenis kelamin" value="Perempuan"> Perempuan<br>
+    </div>
+    <div class="item-form">
+    <label form="message">Pesan</label>
+    <textarea placeholder="Pesan"></textarea>
+    </div>
+<button id="submit">Submit</button>
+</form>
+    
+<div class="result">
+<p class="" id="">Current time:</p> <p class="" id="">Nama:</p>
+<p class="" id="">Tanggal Lahir:</p> <p class="" id="">Jenis Kelamin:</p>
+<p class="" id="">Pesan:</p>
+</div>
+</div>
+<section>
+<footer>
+<div class="footer-content">
+<h3>Created By Michael Pagardin</h3> 
+</div>
+</footer>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+$(".toogle_btn").click(function () {
+$(". Item").toggleClass("active");
+});
+});
+    
 </body>
 </html>
